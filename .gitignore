@@ -1,0 +1,12 @@
+# Ignore worlds and images dirs #
+#################################
+images/
+worlds/
+*.dlw
+*.bmp
+*.jsp
+
+# Ignore compiled files #
+#########################
+*.pyc
+
