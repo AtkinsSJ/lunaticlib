@@ -1,0 +1,31 @@
+lunaticlib is a set of small python libraries for making use of
+.dlw and .jsp files, as used by several games by Hamumu.com
+
+The libraries require pygame to work. So if things utterly fail,
+that's probably the problem.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The JSP class in jsp.py loads a jsp file, and stores it as a series
+of frames. The simplest way to then draw one of the images is
+
+	JSP.draw_image( image_id, surface, position )
+	
+Pass this function the id of the image you want to draw, the pygame
+surface you want to draw it onto, and the position as (x,y), and it
+will draw it, taking the image's offset into account. If the image
+id is invalid, it'll write a message to the console, but carry on
+gracefully.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The World class in world.py is still quite buggy, and a bit badly
+written. Figure it out yourself if you wish. I will document it
+better when it works properly.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The biggest TODO is, of course, being able towrite these file types
+as well as read them. Also, I'm going to rewrite the level rendering
+to have shadows, and speed it up a lot. Hopefully get it to display
+items, too.
